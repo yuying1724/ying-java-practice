@@ -1,21 +1,24 @@
-// 載入插件
-apply plugin: 'java'
-apply plugin: 'war' 
-apply plugin: 'com.bmuschko.tomcat'
 
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'java-library'
 
-plugins {
-    // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
-}
-
-// repositories: 指出 gradle 要到哪抓 jar 檔。
+// In this section you declare where to find the dependencies of your project
 repositories {
-    // Use jcenter for resolving dependencies.
+    // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
 
+dependencies {
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:21.0'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
 // dependencies: 這是一般人最熟悉的部份，把我們專案需要的 jar 檔寫在這裡，有些 framework 會有非常多的 jar 檔，版號又一樣，那麼，可以先用 def 定義版號的變數，省去每次換版本的麻煩。
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
