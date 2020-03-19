@@ -11,29 +11,29 @@ public class FutureValue {
 		
 		
 		// 聚碩 6112
-		BigDecimal stock_6112 = new BigDecimal(34.2);
+		BigDecimal stock_6112 = new BigDecimal(29);
 		BigDecimal dividend_6112 = new BigDecimal(3);
 		BigDecimal lot_6112 = new BigDecimal(7000);
 		
 		// 華固 2548
-		BigDecimal stock_2548 = new BigDecimal(88.9);
+		BigDecimal stock_2548 = new BigDecimal(76.8);
 		BigDecimal dividend_2548 = new BigDecimal(7.5);
 		BigDecimal lot_2548 = new BigDecimal(2000);
 		
+		// 佳格 1227
+		BigDecimal stock_1227 = new BigDecimal(55.8);
+		BigDecimal dividend_1227 = new BigDecimal(2.65);
+		BigDecimal lot_1227 = new BigDecimal(2000);
+		
+		// 元大期 6023
+		BigDecimal stock_6023 = new BigDecimal(46.5);
+		BigDecimal dividend_6023 = new BigDecimal(3.2);
+		BigDecimal lot_6023 = new BigDecimal(2000);
+
 		// 台新 2887
 		BigDecimal stock_2887 = new BigDecimal(13.15);
 		BigDecimal dividend_2887 = new BigDecimal(0.5);
 		BigDecimal lot_2887 = new BigDecimal(6000);
-		
-		// 佳格 1227
-		BigDecimal stock_1227 = new BigDecimal(56.7);
-		BigDecimal dividend_1227 = new BigDecimal(2.5);
-		BigDecimal lot_1227 = new BigDecimal(2000);
-		
-		// 元大期 6023
-		BigDecimal stock_6023 = new BigDecimal(49.1);
-		BigDecimal dividend_6023 = new BigDecimal(2);
-		BigDecimal lot_6023 = new BigDecimal(1000);
 		
 		// 興富發 2542
 		BigDecimal stock_2542 = new BigDecimal(40.4);
@@ -91,10 +91,10 @@ public class FutureValue {
 		
 		dividendTotal = mul(dividend_6112, lot_6112)			//聚碩 6112
 						.add(mul(dividend_2548, lot_2548))		//華固 2548
-						.add(mul(dividend_2887, lot_2887))		//台新 2887
 						.add(mul(dividend_1227, lot_1227))		//佳格 1227
 						.add(mul(dividend_6023, lot_6023))		//元大期 6023
-						.add(mul(dividend_2542, lot_2542))		//興富發 2542
+//						.add(mul(dividend_2887, lot_2887))		//台新 2887
+//						.add(mul(dividend_2542, lot_2542))		//興富發 2542
 //						.add(mul(dividend_00850, lot_00850))	//元大臺灣ESG永續 00850
 //						.add(mul(dividend_2105, lot_2105))		//正新 2105
 //						.add(mul(dividend_3702, lot_3702))		//大聯大 3702
@@ -107,10 +107,10 @@ public class FutureValue {
 		
 		stockPriceTotal = mul(stock_6112, lot_6112)				//聚碩 6112
 						.add(mul(stock_2548, lot_2548))			//華固 2548
-						.add(mul(stock_2887, lot_2887))			//台新 2887
 						.add(mul(stock_1227, lot_1227))			//佳格 1227
 						.add(mul(stock_6023, lot_6023))			//元大期 6023
-						.add(mul(stock_2542, lot_2542))			//興富發 2542
+//						.add(mul(stock_2887, lot_2887))			//台新 2887
+//						.add(mul(stock_2542, lot_2542))			//興富發 2542
 //						.add(mul(stock_00850, lot_00850))		//元大臺灣ESG永續 00850
 //						.add(mul(stock_2105, lot_2105))			//正新 2105
 //						.add(mul(stock_3702, lot_3702))			//大聯大 3702
