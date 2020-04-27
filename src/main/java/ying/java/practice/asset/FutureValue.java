@@ -11,39 +11,54 @@ public class FutureValue {
 		
 		
 		// 聚碩 6112
-		BigDecimal stock_6112 = new BigDecimal(29);
+		BigDecimal stock_6112 = new BigDecimal(35.35);
 		BigDecimal dividend_6112 = new BigDecimal(3);
 		BigDecimal lot_6112 = new BigDecimal(7000);
 		
 		// 華固 2548
-		BigDecimal stock_2548 = new BigDecimal(76.8);
+		BigDecimal stock_2548 = new BigDecimal(88.5);
 		BigDecimal dividend_2548 = new BigDecimal(7.5);
 		BigDecimal lot_2548 = new BigDecimal(2000);
 		
+		// 元大期 6023
+		BigDecimal stock_6023 = new BigDecimal(53.8);
+		BigDecimal dividend_6023 = new BigDecimal(3.2);
+		BigDecimal lot_6023 = new BigDecimal(4000);
+	
+		// 中碳 1723
+		BigDecimal stock_1723 = new BigDecimal(98.7);
+		BigDecimal dividend_1723 = new BigDecimal(5);
+		BigDecimal lot_1723 = new BigDecimal(2000);
+		
+		// 茂順 9942
+		BigDecimal stock_9942 = new BigDecimal(64.2);
+		BigDecimal dividend_9942 = new BigDecimal(4.2);
+		BigDecimal lot_9942 = new BigDecimal(2000);
+		
+		// 元大臺灣ESG永續 00850
+		BigDecimal stock_00850 = new BigDecimal(20.67);
+		BigDecimal dividend_00850 = new BigDecimal(0.7);
+		BigDecimal lot_00850 = new BigDecimal(1000);
+		
+		// 佳醫 4104
+		BigDecimal stock_4104 = new BigDecimal(52.8);
+		BigDecimal dividend_4104 = new BigDecimal(3);
+		BigDecimal lot_4104 = new BigDecimal(2000);
+		
+		// 台新 2887
+		BigDecimal stock_2887 = new BigDecimal(11.8);
+		BigDecimal dividend_2887 = new BigDecimal(0.5);
+		BigDecimal lot_2887 = new BigDecimal(2000);
+
 		// 佳格 1227
 		BigDecimal stock_1227 = new BigDecimal(55.8);
 		BigDecimal dividend_1227 = new BigDecimal(2.65);
 		BigDecimal lot_1227 = new BigDecimal(2000);
 		
-		// 元大期 6023
-		BigDecimal stock_6023 = new BigDecimal(46.5);
-		BigDecimal dividend_6023 = new BigDecimal(3.2);
-		BigDecimal lot_6023 = new BigDecimal(2000);
-
-		// 台新 2887
-		BigDecimal stock_2887 = new BigDecimal(13.15);
-		BigDecimal dividend_2887 = new BigDecimal(0.5);
-		BigDecimal lot_2887 = new BigDecimal(6000);
-		
 		// 興富發 2542
 		BigDecimal stock_2542 = new BigDecimal(40.4);
 		BigDecimal dividend_2542 = new BigDecimal(2.5);
 		BigDecimal lot_2542 = new BigDecimal(1000);
-		
-		// 元大臺灣ESG永續
-		BigDecimal stock_00850 = new BigDecimal(22.61);
-		BigDecimal dividend_00850 = new BigDecimal(0.7);
-		BigDecimal lot_00850 = new BigDecimal(2000);
 		
 		// 正新 2105
 		BigDecimal stock_2105 = new BigDecimal(39.6);
@@ -91,11 +106,14 @@ public class FutureValue {
 		
 		dividendTotal = mul(dividend_6112, lot_6112)			//聚碩 6112
 						.add(mul(dividend_2548, lot_2548))		//華固 2548
-						.add(mul(dividend_1227, lot_1227))		//佳格 1227
 						.add(mul(dividend_6023, lot_6023))		//元大期 6023
+						.add(mul(dividend_1723, lot_1723))		//中碳 1723
+						.add(mul(dividend_9942, lot_9942))		//茂順 9942
+						.add(mul(dividend_00850, lot_00850))	//元大臺灣ESG永續 00850
+//						.add(mul(dividend_4104, lot_4104))		//佳醫 4104
 //						.add(mul(dividend_2887, lot_2887))		//台新 2887
+//						.add(mul(dividend_1227, lot_1227))		//佳格 1227
 //						.add(mul(dividend_2542, lot_2542))		//興富發 2542
-//						.add(mul(dividend_00850, lot_00850))	//元大臺灣ESG永續 00850
 //						.add(mul(dividend_2105, lot_2105))		//正新 2105
 //						.add(mul(dividend_3702, lot_3702))		//大聯大 3702
 //						.add(mul(dividend_00861, lot_00861))	//元大全球未來通訊 00861
@@ -107,11 +125,14 @@ public class FutureValue {
 		
 		stockPriceTotal = mul(stock_6112, lot_6112)				//聚碩 6112
 						.add(mul(stock_2548, lot_2548))			//華固 2548
-						.add(mul(stock_1227, lot_1227))			//佳格 1227
 						.add(mul(stock_6023, lot_6023))			//元大期 6023
+						.add(mul(stock_1723, lot_1723))			//中碳 1723
+						.add(mul(stock_9942, lot_9942))			//茂順 9942
+						.add(mul(stock_00850, lot_00850))		//元大臺灣ESG永續 00850
+//						.add(mul(stock_4104, lot_4104))			//佳醫 4104
 //						.add(mul(stock_2887, lot_2887))			//台新 2887
+//						.add(mul(stock_1227, lot_1227))			//佳格 1227
 //						.add(mul(stock_2542, lot_2542))			//興富發 2542
-//						.add(mul(stock_00850, lot_00850))		//元大臺灣ESG永續 00850
 //						.add(mul(stock_2105, lot_2105))			//正新 2105
 //						.add(mul(stock_3702, lot_3702))			//大聯大 3702
 //						.add(mul(stock_00861, lot_00861))		//元大全球未來通訊 00861
@@ -126,7 +147,7 @@ public class FutureValue {
 		System.out.println("=================================================");
 		
 		
-		BigDecimal pv = new BigDecimal(960000);	// 本金
+		BigDecimal pv = new BigDecimal(1150000);	// 本金
 		BigDecimal finalPV = pv;
 		BigDecimal interest = new BigDecimal(0.05);	//固定回報率
 		int year = 30;	//週期(年)
@@ -147,11 +168,11 @@ public class FutureValue {
 			
 			BigDecimal investmentMonth = BigDecimal.ZERO; // 每月投資
 			if ( n <= 3 ) {
-				investmentMonth = investmentMonth.add(new BigDecimal(10000));
+				investmentMonth = investmentMonth.add(new BigDecimal(8000));
 			} else if (n > 3 && n <= 10) {
-				investmentMonth = investmentMonth.add(new BigDecimal(12000));
-			} else if (n > 10 && n <= 23) {
-				investmentMonth = investmentMonth.add(new BigDecimal(15000));
+				investmentMonth = investmentMonth.add(new BigDecimal(8000));
+			} else if (n > 10 && n <= 30) {
+				investmentMonth = investmentMonth.add(new BigDecimal(10000));
 //			} else if (n > 17 && n <= 23) {
 //				investmentMonth = investmentMonth.add(new BigDecimal(10000));
 //			} else if (n > 23 && n <= 32) {
