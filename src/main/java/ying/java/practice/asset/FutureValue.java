@@ -11,33 +11,33 @@ public class FutureValue {
 		
 		
 		// 聚碩 6112
-		BigDecimal stock_6112 = new BigDecimal(35.35);
+		BigDecimal stock_6112 = new BigDecimal(36.1);
 		BigDecimal dividend_6112 = new BigDecimal(3);
 		BigDecimal lot_6112 = new BigDecimal(7000);
 		
 		// 華固 2548
-		BigDecimal stock_2548 = new BigDecimal(88.5);
+		BigDecimal stock_2548 = new BigDecimal(91.4);
 		BigDecimal dividend_2548 = new BigDecimal(7.5);
 		BigDecimal lot_2548 = new BigDecimal(2000);
 		
 		// 元大期 6023
-		BigDecimal stock_6023 = new BigDecimal(53.8);
+		BigDecimal stock_6023 = new BigDecimal(54);
 		BigDecimal dividend_6023 = new BigDecimal(3.2);
 		BigDecimal lot_6023 = new BigDecimal(4000);
 	
 		// 中碳 1723
-		BigDecimal stock_1723 = new BigDecimal(98.7);
+		BigDecimal stock_1723 = new BigDecimal(101.5);
 		BigDecimal dividend_1723 = new BigDecimal(5);
 		BigDecimal lot_1723 = new BigDecimal(2000);
 		
 		// 茂順 9942
-		BigDecimal stock_9942 = new BigDecimal(64.2);
+		BigDecimal stock_9942 = new BigDecimal(65.4);
 		BigDecimal dividend_9942 = new BigDecimal(4.2);
 		BigDecimal lot_9942 = new BigDecimal(2000);
 		
 		// 元大臺灣ESG永續 00850
-		BigDecimal stock_00850 = new BigDecimal(20.67);
-		BigDecimal dividend_00850 = new BigDecimal(0.7);
+		BigDecimal stock_00850 = new BigDecimal(20.92);
+		BigDecimal dividend_00850 = new BigDecimal(0.5);
 		BigDecimal lot_00850 = new BigDecimal(1000);
 		
 		// 佳醫 4104
