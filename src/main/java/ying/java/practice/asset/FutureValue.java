@@ -37,8 +37,13 @@ public class FutureValue {
 		
 		// 元大臺灣ESG永續 00850
 		BigDecimal stock_00850 = new BigDecimal(20.92);
-		BigDecimal dividend_00850 = new BigDecimal(0.5);
+		BigDecimal dividend_00850 = new BigDecimal(0);
 		BigDecimal lot_00850 = new BigDecimal(1000);
+		
+		// 大華 9905
+		BigDecimal stock_9905 = new BigDecimal(21.25);
+		BigDecimal dividend_9905 = new BigDecimal(1);
+		BigDecimal lot_9905 = new BigDecimal(6000);
 		
 		// 佳醫 4104
 		BigDecimal stock_4104 = new BigDecimal(52.8);
@@ -110,6 +115,7 @@ public class FutureValue {
 						.add(mul(dividend_1723, lot_1723))		//中碳 1723
 						.add(mul(dividend_9942, lot_9942))		//茂順 9942
 						.add(mul(dividend_00850, lot_00850))	//元大臺灣ESG永續 00850
+						.add(mul(dividend_9905, lot_9905))		//大華 9905
 //						.add(mul(dividend_4104, lot_4104))		//佳醫 4104
 //						.add(mul(dividend_2887, lot_2887))		//台新 2887
 //						.add(mul(dividend_1227, lot_1227))		//佳格 1227
@@ -129,6 +135,7 @@ public class FutureValue {
 						.add(mul(stock_1723, lot_1723))			//中碳 1723
 						.add(mul(stock_9942, lot_9942))			//茂順 9942
 						.add(mul(stock_00850, lot_00850))		//元大臺灣ESG永續 00850
+						.add(mul(stock_9905, lot_9905))			//大華 9905
 //						.add(mul(stock_4104, lot_4104))			//佳醫 4104
 //						.add(mul(stock_2887, lot_2887))			//台新 2887
 //						.add(mul(stock_1227, lot_1227))			//佳格 1227
